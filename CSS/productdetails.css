@@ -1,0 +1,25 @@
+.product-item{
+    /* width: 80%; */
+    border: 2px solid #ddd;
+    padding: 3px;
+    margin: 20px auto;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.product-item > *{
+    align-items: center;
+}
+.product-item img{
+    width: 50%;
+    height: 250px;
+    object-fit: contain;
+}
+.prod-title{
+    font-size: 32px;
+    letter-spacing: 5px;
+}
+.prod-title::first-letter{
+    color: darkblue;
+}

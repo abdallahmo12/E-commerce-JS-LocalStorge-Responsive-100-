@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="shop online , easy delivery to your home">
+        <meta name="keywords" content="HTML, CSS, JavaScript , OOP">
+        <meta name="author" content="Abdullah">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Home Shopping Cart</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="CSS/all.css">
+        <link rel="stylesheet" href="CSS/fontawesome.css">
+        <link rel="stylesheet" href="CSS/global.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <a href="index.html" class="brand">
+                        Shopping Cart
+                    </a>
+                    <nav>
+                        <ul id="log_reg">
+                            <li><a href="login.html"> Sign In</a></li>
+                            <li><a href="register.html"> Sign Up</a></li>
+                        </ul>
+                        <ul id="user_info">
+                            <li><a href="profile.html" id="user">username</a></li>
+                            <li><a href="favouriteproducts.html">Favourites</a></li>
+                            <li class="notify">
+                                <i class=" shop-i fas fa-cart-plus"></i>
+                                <span class="badge"> 0 </span>
+
+                                <div class="cartmenu">
+                                    <div class="cartproducts"></div>
+                                    <a  class="cartbtn" href="cartproducts.html">view all cart products</a>
+                                </div>
+                            </li>
+                            <li><a href="#" id="logout">log Out</a></li>
+                        </ul>
+                        <span class="menu"> <i class="fas fa-bars"></i> </span>
+                    </nav>
+                    <!-- <span class="menu"> <i class="fas fa-bars"></i> </span> -->
+                </div>
+            </div>
+        </header>
+        <section class="home">
+            <div class="container">
+                <label for="search"></label>
+                <input type="text" id="search" placeholder="Search By Title" />
+                <div class="merge">
+                <div class="products"></div>
+                <div class="filter-dom">
+                    <h2 class="filter-header">Filter By Size :</h2>
+                    <select aria-label="filterSize" id="filter-by-size">
+                        <option value="" hidden>Select Size</option>
+                        <option value="All">All</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+                </div>
+            </div>
+            <a href="createproduct.html" title="create new product">
+                .<i class="fas fa-plus create-product-icon"></i>
+            </a>
+        </section>
+        <script src="JS/check_user.js"></script>
+        <script src="JS/products.js"></script>
+        <script src="JS/cartmenu.js"></script>
+        <script src="JS/script.js"></script>
+    </body>
+</html>

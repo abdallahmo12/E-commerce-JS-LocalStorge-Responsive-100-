@@ -1,0 +1,21 @@
+#create-form{
+    margin-top: 20px ;
+}
+#create-form input , #product-selection{
+    width:100%;
+    padding: 10px 7px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    outline:none;
+}
+#create-form input[type="submit"]{
+    border:0;
+    background: darkcyan;
+}
+#create-form input[type="submit"]:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
