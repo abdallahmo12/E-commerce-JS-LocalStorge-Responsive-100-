@@ -253,3 +253,9 @@ menuBtn.addEventListener("click",showMenu);
 function showMenu(){
     menuDom.style.display == "none" ? menuDom.style.display = "flex": menuDom.style.display = "none";
 }
+
+if(localStorage.getItem("username") == null)
+{
+    links.style.display = "flex";
+    userDom.style.display = "none";
+}
